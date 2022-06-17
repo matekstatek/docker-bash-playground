@@ -22,6 +22,6 @@ for a in $containers; do
     echo "Id: $a"
     echo -n "IP address: "
     docker container inspect $(echo $a) --format {{.NetworkSettings.IPAddress}}
-    echo ""
+    echo "" 
     ((i=i + 1))
 done
